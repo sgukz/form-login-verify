@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN FORM</title>
+
+    <link rel="shortcut icon" href="src/assets/img/cancer.png">   
+
+    <!-- bootstrap 4.6.0 -->
+    <link rel="stylesheet" href="src/assets/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <!-- Custom style sheet -->
+    <link rel="stylesheet" href="src/assets/css/style.login.css">
+    <!-- MDB -->
+    <!-- <link rel="stylesheet" href="src/assets/css/mdb.min.css"> -->
+
+</head>
+
+<body class="my-login-page">
+    <section class="h-100">
+        <div class="container h-100">
+            <div class="row justify-content-md-center h-100">
+                <div class="card-wrapper">
+                    <div class="card fat">
+                        <div class="card-body">
+                            <div class="brand text-center">
+                                <i class="fas fa-hospital-symbol fa-5x"></i>
+                            </div>
+                            <h4 class="card-title">Login</h4>
+                            <form id="form-login" class="my-login-validation" novalidate="">
+                                <div class="form-group">
+                                    <label for="user_name" class="font-weight-bold">Username</label>
+                                    <input id="user_name" type="text" class="form-control" name="user_name" autofocus>
+                                    <div class="invalid-feedback">
+                                        Username is invalid
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="password" class="font-weight-bold">Password
+                                        <a href="forgot.html" class="float-right">
+                                            Forgot Password?
+                                        </a>
+                                    </label>
+                                    <input id="password" type="password" class="form-control" name="password" data-eye>
+                                    <div class="invalid-feedback">
+                                        Password is required
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="custom-checkbox custom-control">
+                                        <input type="checkbox" name="remember" id="remember"
+                                            class="custom-control-input">
+                                        <label for="remember" class="custom-control-label">Remember Me</label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group m-0">
+                                    <button type="submit" class="btn btn-primary btn-block font-weight-bold">
+                                        Login
+                                    </button>
+                                </div>
+                                <div class="mt-4 text-center">
+                                    Don't have an account? <a href="register.html">Create One</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- <div class="footer">
+                        Copyright &copy; 2017 &mdash; Your Company
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="src/assets/js/jquery.min.js"></script>
+    <script src="src/assets/js/bootstrap.min.js"></script>
+    <script src="src/assets/js/popper.min.js"></script>
+    <script src="src/assets/js/jquery.validate.min.js"></script>
+    <!-- sweetalert2 -->
+    <script src="src/assets/js/sweetalert2.js"></script>
+    
+    <script src="src/assets/js/login.js"></script>
+</body>
+
+</html>
